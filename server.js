@@ -11,3 +11,9 @@ app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 
 app.listen(PORT, () => console.log(`Server rodando em http://localhost:${PORT}`));
+
+
+
+
+
+

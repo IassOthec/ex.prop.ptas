@@ -19,15 +19,12 @@ async function readJsonFile(filePath) {
 async function writeJsonFile(filePath, data) {
   await writeFile(filePath, JSON.stringify(data, null, 2), 'utf8');
 }
-
 export async function readUsers() {
   return readJsonFile(USERS_DB_PATH);
 }
-
 export async function readProducts() {
   return readJsonFile(PRODUCTS_DB_PATH);
 }
-
 export async function writeUsers(users) {
   await writeJsonFile(USERS_DB_PATH, users);
 }
